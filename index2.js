@@ -21,6 +21,8 @@ app.use(cors());
 app.use(express.static("public"));
 app.use(bodyParser.json());
 
+// Create routes
+
 app.get('/', (req, res) => {
     res.redirect("/info.html");
 });
